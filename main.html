@@ -1,16 +1,41 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Async File Logger</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      color: #333;
+    }
+    input[type="file"] {
+      margin-top: 10px;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 15px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+  <h1>Async File Logger</h1>
+  <p>Select 5 text files to read their contents:</p>
+  <input type="file" id="fileInput" multiple accept=".txt">
+  <button id="readFiles">Read and Log Files</button>
 
+  <script src="script.js"></script>
 </body>
-
 </html>
+
